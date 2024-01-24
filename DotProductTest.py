@@ -1,4 +1,5 @@
-# This matrix is to 
+
+
 def DotProductTest(MatrixA, MatrixB):
     if MatrixA or MatrixB == 0:
         return 0

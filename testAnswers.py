@@ -1,5 +1,5 @@
 
-
+# create script similar to test_b.py
 def DotProductTest(MatrixA, MatrixB):
     if MatrixA or MatrixB == 0:
         return 0

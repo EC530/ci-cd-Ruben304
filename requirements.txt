@@ -1,1 +1,4 @@
-Numpy was be downloaded to your system
+Necessary downloads:
+Numpy
+pytest
+flake8

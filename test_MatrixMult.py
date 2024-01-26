@@ -1,7 +1,6 @@
 import MatrixMult
 import numpy as np
 # create script similar to test_b.py
-# mismatched matrix sizes
 
 # function to check zero matrix input
 def test_zeroMatrix():
@@ -40,6 +39,7 @@ def test_characterMatrix():
     else:
         assert True
 
+#helper function for validSizeMatrix function
 # returns the number of columns in a given matrix
 def sizeCheckMatrix(Matrix):
     matrixLen = 1000000

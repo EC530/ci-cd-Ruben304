@@ -1,4 +1,1 @@
-Necessary downloads:
-Numpy
-pytest
-flake8
+numpy

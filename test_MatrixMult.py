@@ -29,7 +29,8 @@ def checkNumberMatrix(Matrix):
 
 
 def test_characterMatrix():
-    MatrixA = [[2, 4, 6], ['b', 8, 7]]
+    # MatrixA = [[2, 4, 6], ['b', 8, 7]]
+    MatrixA = [[2, 4, 6], [3, 8, 7]]
     MatrixB = [[3, 0, 7], [6, 1, 8]]
 
     # if there is a character in the matrix then the test will fail/false
@@ -57,7 +58,8 @@ def sizeCheckMatrix(Matrix):
 
 def test_validSizeMatrix():
     MatrixA = [[2, 4, 6], [9, 8, 7]]
-    MatrixB = [[1, 3], [7, 9, 2]]
+    MatrixB = [[1, 3, 3], [7, 9, 2]]
+    # MatrixB = [[1, 3], [7, 9, 2]]
 
     # in numpy, the only requirement for matrix multiplcation is that both matricies have the same number of columns
     # and it will automcatically make inhomogenous matricies assert to false

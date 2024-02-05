@@ -1,5 +1,6 @@
 import MatrixMult
 import numpy as np
+import logging
 # create script similar to test_b.py
 
 # function to check zero matrix input
@@ -17,6 +18,7 @@ def test_zeroMatrix():
         # converts result to array for easier comparison
         result = np.array(result)
         # asserts result is a zero matrix
+        logging.info('Test for zero matrix complete')
         assert np.all(result == 0)
 
 # helper function to check character in matrix
@@ -36,8 +38,10 @@ def test_characterMatrix():
     # if there is a character in the matrix then the test will fail/false
     # two nots are done because the only time it should flag True here is when the passed results are True and True
     if not checkNumberMatrix(MatrixA) or not checkNumberMatrix(MatrixB):
-        assert False, "Characters found in matrix"
+        logging.error("Characters found in matrix")
+        assert False
     else:
+        logging.info('Test for numerical matrix passed')
         assert True
 
 #helper function for validSizeMatrix function
@@ -64,7 +68,9 @@ def test_validSizeMatrix():
     # in numpy, the only requirement for matrix multiplcation is that both matricies have the same number of columns
     # and it will automcatically make inhomogenous matricies assert to false
     if sizeCheckMatrix(MatrixA) == sizeCheckMatrix(MatrixB):
+        logging.info('Test for multiplyable matrices passed')
         assert True
     else:
+        logging.error('Invalid dimensions for matrix multiplication')
         assert False
 

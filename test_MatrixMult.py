@@ -1,8 +1,16 @@
 import MatrixMult
 import numpy as np
 import logging
+import tracemalloc
 # create script similar to test_b.py
 
+def pytest_configure(config):
+    tracemalloc.start()
+
+def pytest_unconfigure(config):
+    current, peak = tracemalloc.get_traced_memory()
+    print(f"\nTotal Memory Usage - Current: {current / 10**6}MB; Peak: {peak / 10**6}MB")
+    tracemalloc.stop()
 # function to check zero matrix input
 def test_zeroMatrix():
     MatrixA = [[2, 4, 6], [9, 8, 7]]

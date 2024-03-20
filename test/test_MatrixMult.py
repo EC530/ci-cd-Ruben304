@@ -1,4 +1,4 @@
-import MatrixMult
+from src import MatrixMult
 import numpy as np
 import logging
 import tracemalloc
@@ -22,7 +22,7 @@ def test_zeroMatrix():
 
     # checks if either MatrixA or MatrixB is a zero matrix
     if np.all(ArrayMatrixA == 0) or np.all(ArrayMatrixB == 0):
-        result = MatrixMult.matrixMultiply(MatrixA, MatrixB)
+        result = MatrixMult.matrixMult(MatrixA, MatrixB)
         # converts result to array for easier comparison
         result = np.array(result)
         # asserts result is a zero matrix

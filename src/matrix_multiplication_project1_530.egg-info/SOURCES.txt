@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/MatrixMult.py
+src/__init__.py
+src/matrix_multiplication_project1_530.egg-info/PKG-INFO
+src/matrix_multiplication_project1_530.egg-info/SOURCES.txt
+src/matrix_multiplication_project1_530.egg-info/dependency_links.txt
+src/matrix_multiplication_project1_530.egg-info/requires.txt
+src/matrix_multiplication_project1_530.egg-info/top_level.txt
+test/test_MatrixMult.py

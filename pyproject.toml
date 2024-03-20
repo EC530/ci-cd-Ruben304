@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matrix_multiplication_project1_530"
+version = "0.1.0"
+description = "simple matrix multiplication package"
+authors = [
+    { name = "Ruben F. Carbajal", email = "rubenfc@bu.edu" },
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "numpy ~= 1.19.2"
+]
+
+[project.urls]
+homepage = "https://github.com/EC530/ci-cd-Ruben304.git"
+repository = "https://github.com/EC530/ci-cd-Ruben304.git"
+

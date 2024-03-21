@@ -19,4 +19,4 @@ EXPOSE 8000
 ENV NAME World
 
 # Run the application
-CMD ["python", "src/MatrixMult.py"]
+CMD ["pytest", "test/test_MatrixMult.py"]

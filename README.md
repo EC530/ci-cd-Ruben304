@@ -25,11 +25,15 @@ The purpose of this project is to learn tools such as pytest, flake8, and git hu
 - In the root directory of the project run 
 `python -m build`
 
+### For the ready to do package
+- Under the python-package folder
+
 ### To distribute this package
 - Install twine
 `pip install twine`
 
-- 
+- To upload to PyPI
+`twine upload python-package/*`
 
 ### To create the docker image
 - To build the image
@@ -45,4 +49,5 @@ The purpose of this project is to learn tools such as pytest, flake8, and git hu
 - To load
 `docker load -i matrix-multiplication.tar`
 
+- The ready to go image file is not able to be uploaded do to Git hub size limit of 100 MB 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/5WunfJN-)
